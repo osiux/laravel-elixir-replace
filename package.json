@@ -1,0 +1,29 @@
+{
+  "name": "laravel-elixir-replace",
+  "version": "1.0.0",
+  "description": "Simple gulp-batch-replace wrapper for Laravel Elixir.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osiux/laravel-elixir-replace"
+  },
+  "keywords": [
+    "gulp",
+    "laravel",
+    "elixir",
+    "replace"
+  ],
+  "author": "Eduardo Reveles <me@osiux.ws> (http://osiux.ws)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osiux/laravel-elixir-replace/issues"
+  },
+  "homepage": "https://github.com/osiux/laravel-elixir-replace",
+  "dependencies": {
+    "gulp-batch-replace": "0.0.0",
+    "parse-filepath": "^0.5.0"
+  }
+}
