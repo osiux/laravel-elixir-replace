@@ -1,13 +1,13 @@
 var gulp    = require('gulp'),
-    elixir  = require('laravel-elixir'),
     replace = require('gulp-batch-replace'),
     parsePath = require('parse-filepath'),
-    utilities = require('laravel-elixir/ingredients/commands/Utilities');
+    Elixir  = require('laravel-elixir'),
+    Task    = Elixir.Task;
 
-elixir.extend('replace', function(file, replacements, output) {
+Elixir.extend('replace', function(file, replacements, output) {
 
-    gulp.task('replace', function () {
-        utilities.logTask("Replacing strings in", file);
+    return new Task('replace', function() {
+        this.log(file, output);
 
         if ( output ) {
             var path = parsePath(output),
@@ -20,7 +20,7 @@ elixir.extend('replace', function(file, replacements, output) {
         return gulp.src(file)
                    .pipe(replace(replacements))
                    .pipe(gulp.dest(dest));
-    });
+    })
+    .watch('./public/**');
 
-    return this.queueTask('replace');
 });
