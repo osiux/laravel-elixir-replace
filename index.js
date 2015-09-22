@@ -21,6 +21,6 @@ Elixir.extend('replace', function(file, replacements, output) {
                    .pipe(replace(replacements))
                    .pipe(gulp.dest(dest));
     })
-    .watch('./public/**');
+    .watch('./resources/**');
 
 });

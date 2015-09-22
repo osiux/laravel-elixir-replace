@@ -1,6 +1,6 @@
 {
   "name": "laravel-elixir-replace",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple gulp-batch-replace wrapper for Laravel Elixir.",
   "main": "index.js",
   "scripts": {
